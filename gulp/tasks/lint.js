@@ -1,7 +1,7 @@
 var gulp        = require('gulp');
 var config      = require('../config');
 var htmlhint    = require('gulp-htmlhint');
-var gitStaged   = require("gulp-git-staged");
+// var gitStaged   = require("gulp-git-staged");
 var sassLint    = require('gulp-sass-lint')
 
 gulp.task('lint:js', function() {
@@ -14,7 +14,7 @@ gulp.task('lint:js', function() {
 
 gulp.task('lint:html', function() {
   return gulp.src(config.dest.html + "/*.html")
-  	.pipe(gitStaged())
+  	// .pipe(gitStaged())
     .pipe(htmlhint('.htmlhintrc'))
     .pipe(htmlhint.failReporter());
 });
