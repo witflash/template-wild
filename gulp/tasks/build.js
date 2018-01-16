@@ -5,7 +5,7 @@ var config      = require('../config');
 function build(cb) {
     runSequence(
         'clean',
-        'sprite:svg',
+        'iconfont',
         'sass',
         'nunjucks',
         'webpack',

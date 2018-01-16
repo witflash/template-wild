@@ -5,7 +5,7 @@ gulp.task('watch',
     ['copy:watch',
 
     'nunjucks:watch',
-    'sprite:svg:watch',
+    'iconfont:watch',
     'webpack:watch',
     'sass:watch'
 ]);

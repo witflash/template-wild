@@ -67,4 +67,5 @@ cd ..
 :end
 echo.
 echo All tasks done! Press anykey to exit.
+echo (c) Created by WitFlash
 pause

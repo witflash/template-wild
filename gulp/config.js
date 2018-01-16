@@ -5,7 +5,7 @@ var destPath = 'docs';
 
 var config = {
     env       : 'development',
-    production: production,
+    production: 'production',
 
     src: {
         root         : 'src',
