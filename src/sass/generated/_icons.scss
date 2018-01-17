@@ -27,17 +27,8 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == alarm {
+	@if $filename == search {
 		$char: "\E001";
-	}
-	@if $filename == graph {
-		$char: "\E002";
-	}
-	@if $filename == speech {
-		$char: "\E003";
-	}
-	@if $filename == tumblr {
-		$char: "\E004";
 	}
 
 	@return $char;
@@ -54,15 +45,6 @@
 	}
 }
 
-.icon-alarm {
-	@include icon(alarm);
-}
-.icon-graph {
-	@include icon(graph);
-}
-.icon-speech {
-	@include icon(speech);
-}
-.icon-tumblr {
-	@include icon(tumblr);
+.icon-search {
+	@include icon(search);
 }
