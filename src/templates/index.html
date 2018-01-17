@@ -7,11 +7,13 @@ description: This is some description
 
 {% block content %}
 
-<h1>Hello World!</h1>
-
-<span class="icon-alarm"></span>
-<span class="icon-graph"></span>
-
-
+{% include 'partial/_header.html' %}
+{% include 'partial/_impress.html' %}
+{% include 'partial/_about.html' %}
+{% include 'partial/_galery.html' %}
+{% include 'partial/_journal.html' %}
+{% include 'partial/_media.html' %}
+{% include 'partial/_contact.html' %}
+{% include 'partial/_footer.html' %}
 
 {% endblock %}
