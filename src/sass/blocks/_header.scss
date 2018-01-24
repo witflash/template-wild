@@ -1,0 +1,53 @@
+@import '_nav';
+@import '_button';
+
+%header {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: $color-sign_light;
+    padding: 50px;
+    font-size: $font-mid;
+    color: $color-white;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        padding: 2em;
+        background-color: $color-white;
+        font-size: $font-small;
+        color: $color-menu;
+    }
+
+    &__logo {
+        flex: 2 0 auto;
+    }
+
+    &__nav {
+        
+    }
+
+    &__greating {
+        @include position-center;
+        text-align: center;
+    }
+
+    &__title {
+        @extend %header;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: $font-header;
+        letter-spacing: 0.1em;
+    }
+
+    &__subtitle {
+        @extend %header;
+        letter-spacing: 0.2em;
+        font-family: $font-secondary;
+    }
+}

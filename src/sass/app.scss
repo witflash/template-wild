@@ -1,5 +1,8 @@
+// GENERAL STYLES
 @import 'variables';
 @import 'helpers/all';
 @import 'generated/icons';
 @import 'layouts';
-@import 'blocks/all';
+
+// PAGE'S SECTIONS
+@import 'blocks/_header';

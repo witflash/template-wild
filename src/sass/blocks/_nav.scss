@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition-duration: 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__search {
+        font-size: 1.3em;
+    }
+}
