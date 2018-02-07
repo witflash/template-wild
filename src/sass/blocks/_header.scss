@@ -10,10 +10,16 @@
 .header {
     height: 100vh;
     box-sizing: border-box;
-    background-color: $color-sign_light;
+    background-color: $color-bg;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: $font-mid;
     color: $color-white;
+
+    @media (max-height: 600px) {
+        height: auto;
+    }
 
     &__top {
         display: flex;
@@ -24,8 +30,14 @@
         color: $color-menu;
     }
 
-    &__logo {
+    &__logo-wrap {
         flex: 2 auto;
+        text-align: left;
+    }
+
+    &__logo {
+        height: 1.2em;
+        color: $color-menu;
     }
 
     &__nav {

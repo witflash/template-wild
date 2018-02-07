@@ -27,8 +27,20 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == search {
+	@if $filename == facebook {
 		$char: "\E001";
+	}
+	@if $filename == gplus {
+		$char: "\E002";
+	}
+	@if $filename == right {
+		$char: "\E003";
+	}
+	@if $filename == search {
+		$char: "\E004";
+	}
+	@if $filename == twitter {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -45,6 +57,18 @@
 	}
 }
 
+.icon-facebook {
+	@include icon(facebook);
+}
+.icon-gplus {
+	@include icon(gplus);
+}
+.icon-right {
+	@include icon(right);
+}
 .icon-search {
 	@include icon(search);
+}
+.icon-twitter {
+	@include icon(twitter);
 }
