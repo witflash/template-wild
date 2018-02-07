@@ -1,6 +1,29 @@
+/* BREAKPOINTS */
+$min-height: 'max-height: 550px';
+$tablet-width: '768px';
+$desktop-width: '1024px';
+
+
 @mixin position-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@mixin position-center-reset {
+    position: static;
+    transform: none;
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
 }

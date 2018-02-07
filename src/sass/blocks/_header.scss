@@ -17,7 +17,7 @@
     font-size: $font-mid;
     color: $color-white;
 
-    @media (max-height: 600px) {
+    @media ($min-height) {
         height: auto;
     }
 
@@ -47,6 +47,11 @@
     &__greating {
         @include position-center;
         text-align: center;
+        
+        @media ($min-height) {
+            @include position-center-reset;
+            margin: 2em;
+        }
     }
 
     &__title {

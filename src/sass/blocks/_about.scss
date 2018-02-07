@@ -1,0 +1,12 @@
+.about {
+    padding-left: 20px;
+    transition: $delay-global;
+
+    @include tablet {
+        padding-left: 100px;
+    }
+
+    @include desktop {
+        padding-left: 150px;
+    }
+}

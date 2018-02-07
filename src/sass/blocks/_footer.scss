@@ -1,15 +1,28 @@
 .footer {
     font-size: $font-sign;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-flow: column;
+
+    @include desktop {
+        flex-flow: row wrap;
+        align-items: center;    
+    }
     
     &__item {
-        flex: 1 0 50%;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         padding: 2em;
         box-sizing: border-box;
+        transition: $delay-global;
+        
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        @include desktop {
+            flex: 1 0 auto;
+        }
     } 
 
     &__logo {
@@ -17,11 +30,11 @@
     }
 
     &__additional {
-        margin-right: 2em;
-        text-overflow: none;
-
-        &:last-child {
-            margin-right: 0;
+        margin-bottom: 1em;
+        transition: $delay-global;        
+        
+        @include tablet {
+            margin-bottom: 0; 
         }
     }
 
@@ -48,20 +61,48 @@
 
 
     &__bottom {
-        flex: 1 0 100%;
         display: flex;
         box-sizing: border-box;
         background-color: $color-bg;
-        padding: 1em 3em;
+        padding: 1em 1em;
         justify-content: space-between;
         color: $color-sign_light;
+        font-size: 0.8em;
+        transition: $delay-global;        
+
+        @include tablet {
+            padding: 1em 3em;
+            font-size: 1em;
+        }
+
+        @include desktop {
+            flex: 1 100%;
+        }
+    }
+
+    &__copyright {
+        flex: 1 1 auto;        
+        transition: $delay-global;
+    }
+
+    &__social {
+        flex: 0 0 auto;
     }
 
     &__icon {
-        margin-right: 2em;
-
+        margin-right: 1em;
+        transition: $delay-global;        
+        
         &:last-child {
             margin-right: 0;
+        }
+        
+        @include tablet {
+            margin-right: 2em;   
+        }
+
+        @include desktop {
+            margin-right: 3em;
         }
     }
 }
