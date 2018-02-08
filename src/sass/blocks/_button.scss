@@ -20,8 +20,8 @@
         border: 2px solid $color-menu;
         
         &:hover {
-            background-color: $color-menu * 0.7;
-            color: $color-white * 0.8;
+            background-color: $color-menu;
+            color: $color-white;
         }
     }
 }

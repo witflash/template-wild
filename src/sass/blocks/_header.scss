@@ -30,6 +30,10 @@
         font-size: $font-mid;
     }
 
+    @include desktop {
+        padding: 50px 50px 0 50px;
+    }
+
     &__top {
         display: flex;
         flex-flow: column;

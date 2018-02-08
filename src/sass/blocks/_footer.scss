@@ -15,7 +15,7 @@
         box-sizing: border-box;
         transition: $delay-global;
         
-        @include tablet {
+        @include phablet {
             flex-direction: row;
             justify-content: space-around;
         }
@@ -26,7 +26,12 @@
     } 
 
     &__logo {
-        // padding: 3em;
+        height: 40px;
+        transition: $delay-global;                
+
+        @include phablet {
+            height: auto;
+        }
     }
 
     &__additional {
@@ -70,8 +75,12 @@
         font-size: 0.8em;
         transition: $delay-global;        
 
-        @include tablet {
+        @include phablet {
             padding: 1em 3em;
+            font-size: 0.9em;
+        }
+
+        @include tablet {
             font-size: 1em;
         }
 

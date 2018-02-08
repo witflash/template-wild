@@ -27,23 +27,26 @@
     }
 
     &__item {
-        padding: 0.5em 0;
         border-bottom: 1px dotted $color-menu;
         transition: $delay-global;        
-
+        
         @include phablet {
             border: none;
         }
     }
-
+    
     &__link {
+        display: block;
+        padding: 0.5em 0.7em;
+        border-radius: 2em;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: $color-menu;
         transition: $delay-global;
-
+        
         &:hover {
-            color: $color-sign;
+            background-color: $color-menu;
+            color: $color-white;
         }
     }
 
@@ -51,10 +54,10 @@
         display: flex;
         align-items: flex-end;
         font-size: 1.3em;
-        padding-top: 0.5em;
+        padding-bottom: 0;
         
         @include phablet {
-            padding: 0;
+            padding: 0 0 0 0.4em;
             margin-left: 1em;
         }
     }
