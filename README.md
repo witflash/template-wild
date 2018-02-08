@@ -1,3 +1,4 @@
+[Open Current Stage](https://witflash.github.io/template-wild)
 # How to use
 
 Clone this repo and then in command line type:
