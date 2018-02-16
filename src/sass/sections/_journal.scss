@@ -1,0 +1,5 @@
+.journal {
+	@include adaptive-padding-left (){}
+	@include adaptive-margin-bottom (){}
+	transition: $delay-global;
+}

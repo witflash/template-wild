@@ -1,25 +1,29 @@
 <section class="contact" id="contact">
   <h2 class="title contact__title">Contact</h2>
 
-  <div class="contact__item">
-    <div class="contact__touch">
-      <h3 class="contact__title">Get in touch</h3>
-      <p class="contact__subtitle">We're here for you</p>
-      <div class="contact__chart">3,146</div>
-      <div class="contact__eval contact__eval_video">923 video makers</div>
-      <div class="contact__eval photo">1622 Photographers</div>
-      <div class="contact__eval contact__eval_motion">601 Motion Designers</div>
-    </div>
-    <div class="contact__team">Team Photo</div>
-  </div>
+  <div class="contact__content">
 
-  <div class="contact__item">
+    <div class="contact__team">
+      <div class="contact__touch">
+        <h3 class="contact__header">Get in touch</h3>
+        <p class="contact__subtitle">We're here for you</p>
+        <div class="contact__chart">
+          <img src="img/graphic.svg" alt="Chart" class="contact__graphic">
+          <div class="contact__eval contact__eval_video">923 video makers</div>
+          <div class="contact__eval photo">1622 Photographers</div>
+          <div class="contact__eval contact__eval_motion">601 Motion Designers</div>
+        </div>
+      </div>
+      <div class="contact__photo"></div>
+    </div>
+  
     <form action="/" method="post" name="contact" class="contact__form">
-      <input type="text" name="name" placeholder="Your name is?">
-      <input type="email" name="email" placeholder="Email">
-      <textarea name="message" rows="5" placeholder="Message..."></textarea>
-      <button class="button button__contact">Say hello</button>
+      <input type="text" name="name" placeholder="Your name is?" class="contact__name">
+      <input type="email" name="email" placeholder="Email" class="contact__email">
+      <textarea name="message" rows="5" placeholder="Message..." class="contact__message"></textarea>
+      <button class="button contact__button">Say hello</button>
     </form>
+
   </div>
 
 </section>

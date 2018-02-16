@@ -1,0 +1,62 @@
+.contact {
+	@include adaptive-padding-left (){}
+	@include adaptive-margin-bottom (){}
+	transition: $delay-global;
+	
+	&__content {
+		display: flex;
+		flex-flow: column;
+
+		@include tablet {
+			flex-flow: row;
+		}
+	}
+	
+	&__team {
+		display: flex;
+		flex-flow: wrap;
+		align-items: center;
+
+		flex: 1;
+	}
+	
+	&__touch {
+		display: flex;
+		flex-flow: column;
+
+		flex: 1;
+	}
+
+	&__photo {
+		align-self: stretch;
+		background: linear-gradient(to bottom, $color-sign 0%, transparent 60%), url("../img/team.jpg") center;
+		background-size: cover;
+
+		flex: 1;
+	}
+
+	&__header {
+		font-size: $font-large;
+		color: $color-text;
+	}
+
+	&__subtitle {
+		font-size: $font-sign;
+		color: $color-text_light;
+	}
+	
+	&__form {
+		display: flex;
+		flex-flow: column;
+		// align-items: center;
+		justify-content: center;		
+
+		flex: 1;		
+	}
+
+
+	&__chart {
+		display: flex;
+		flex-flow: column;
+	}
+}
