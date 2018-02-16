@@ -4,12 +4,19 @@
 @import 'generated/icons';
 @import 'layouts';
 
+
+// BEM BLOCKS
+@import 'blocks/_nav';
+@import 'blocks/_button';
+@import 'blocks/_title';
+@import 'blocks/_author';
+
 // PAGE'S SECTIONS
-@import 'blocks/_header';
-@import 'blocks/_impress';
-@import 'blocks/_about';
-@import 'blocks/_gallery';
-@import 'blocks/_journal';
-@import 'blocks/_media';
-@import 'blocks/_contact';
-@import 'blocks/footer';
+@import 'sections/_header';
+@import 'sections/_impress';
+@import 'sections/_about';
+@import 'sections/_gallery';
+@import 'sections/_journal';
+@import 'sections/_media';
+@import 'sections/_contact';
+@import 'sections/_footer';

@@ -1,3 +1,21 @@
+
+@mixin phablet {
+    @media (min-width: $phablet-width) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+
 @mixin position-center {
     position: absolute;
     top: 50%;
@@ -10,20 +28,45 @@
     transform: none;
 }
 
-@mixin phablet {
-    @media (min-width: $phablet-width) {
-        @content;
+
+@mixin adaptive-padding-left ($mobile: 10px, $phablet: 30px, $tablet: 80px, $desktop: 150px) {
+    @content;
+    padding-left: $mobile;
+    @include phablet {
+        padding-left: $phablet;
+    }
+    @include tablet {
+        padding-left: $tablet;
+    }
+    @include desktop {
+        padding-left: $desktop;
     }
 }
 
-@mixin tablet {
-    @media (min-width: $tablet-width) {
-        @content;
+@mixin adaptive-margin-bottom ($mobile: 30px, $phablet: 50px, $tablet: 90px, $desktop: 140px) {
+    @content;
+    margin-bottom: $mobile;
+    @include phablet {
+        margin-bottom: $phablet;
+    }
+    @include tablet {
+        margin-bottom: $tablet;
+    }
+    @include desktop {
+        margin-bottom: $desktop;
     }
 }
 
-@mixin desktop {
-    @media (min-width: $desktop-width) {
-        @content;
+@mixin adaptive-padding ($mobile, $phablet, $tablet, $desktop) {
+    @content;
+    padding: $mobile;
+    @include phablet {
+        padding: $phablet;
+    }
+    @include tablet {
+        padding: $tablet;
+    }
+    @include desktop {
+        padding: $desktop;
     }
 }

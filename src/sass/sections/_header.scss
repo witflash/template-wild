@@ -1,6 +1,3 @@
-@import '_nav';
-@import '_button';
-
 %header {
     margin: 0;
     padding: 0;
@@ -33,6 +30,8 @@
     @include desktop {
         padding: 50px 50px 0 50px;
     }
+
+    @include adaptive-margin-bottom (){}
 
     &__top {
         display: flex;

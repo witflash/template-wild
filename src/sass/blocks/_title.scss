@@ -1,0 +1,29 @@
+.title {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: $font-header * 0.7;
+    text-transform: uppercase;
+    color: $color-text;
+    transition: $delay-global;
+
+    @include phablet {
+        font-size: $font-header * 0.8;
+    }
+
+    @include tablet {
+        font-size: $font-header * 0.9;
+    }
+
+    @include desktop {
+        font-size: $font-header;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        height: 0.4em;
+        background: url('../img/divider-title.svg') no-repeat;
+        background-size: 1.2em;
+    }
+}

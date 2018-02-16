@@ -1,0 +1,19 @@
+.impress {
+    @include adaptive-padding-left (){}
+    @include adaptive-margin-bottom (){}
+    transition: $delay-global;
+
+    &__title {
+        width: 4em;
+    }
+
+    &__subtitle {
+        margin: 0.5em 0;
+        font-size: $font-large;
+        color: $color-text;
+    }
+
+    &__author {
+        margin-bottom: 1em;
+    }
+}
