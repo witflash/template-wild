@@ -16,4 +16,18 @@
     &__author {
         margin-bottom: 1em;
     }
+
+    &__shots {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__last {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__row {
+        display: flex;
+    }
 }

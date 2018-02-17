@@ -1,0 +1,19 @@
+.more {
+	display: flex;
+	font-size: $font-mid;
+	color: $color-sign;
+	transition: $delay-global;
+	
+	&::after {
+		content: url('../img/arrow-right.svg');
+		display: inline-block;
+		margin-left: 0.8em;
+		padding-top: 0.1em;
+		transition: $delay-global*1.5;
+	}
+
+	&:hover:after {
+		margin-left: 0.2em;
+		transform: rotate(360deg);
+	}
+}
