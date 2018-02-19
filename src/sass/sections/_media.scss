@@ -2,4 +2,10 @@
 	@include adaptive-padding-left (){}
 	@include adaptive-margin-bottom (){}
 	transition: $delay-global;
+
+	&__video {
+		height: 300px;
+		background: url('../img/watch-video.jpg');
+		background-size: cover;
+	}
 }

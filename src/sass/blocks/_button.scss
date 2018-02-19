@@ -24,4 +24,15 @@
             color: $color-white;
         }
     }
+
+    &_triangle {
+        padding: 0;
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+
+        &::before {
+            content: url('../img/arrow-triangle.svg');
+        }
+    }
 }
