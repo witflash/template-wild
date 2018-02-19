@@ -2,4 +2,36 @@
 	@include adaptive-padding-left (){}
 	@include adaptive-margin-bottom (){}
 	transition: $delay-global;
+
+	&__slider {
+		display: flex;
+	}
+
+	&__item {
+		box-shadow: 10px 0 15px rgba(0,0,0,0.1),
+					-10px 0 15px rgba(0,0,0,0.1),
+					0 15px 20px rgba(0,0,0,0.1);
+	}
+
+	&__image {
+		width: 260px;
+		height: 230px;
+		object-fit: cover;
+		border: 20px solid white;
+	}
+
+	&__caption {
+		padding: 0 20px 70px 20px;
+		font-size: $font-sign;
+	}
+
+	&__name {
+		margin-bottom: 0.5em;
+		color: $color-text;
+	}
+
+	&__date {
+		font-family: $font-secondary;
+		color: $color-text_light;
+	}
 }
