@@ -57,12 +57,33 @@
         list-style: none;
     }
     
-    &__link {
-        padding-bottom: 1em;
-        color: $color-sign;
-        white-space: nowrap;        
+    &__link-box {
+        margin-bottom: 1em;
+        white-space: nowrap;
     }
 
+    &__link {
+        position: relative;
+        color: $color-sign;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $color-sign;
+            transform-origin: bottom right;
+            transition: transform $delay-global ease-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+    }
 
 
     &__bottom {
